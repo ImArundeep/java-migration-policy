@@ -1,6 +1,6 @@
 # fm-pack-java-modernization
 
-An Anteroom pack for repeatable, evidence-based Java assessment and approval-gated end-to-end migration.
+An AR pack for repeatable, evidence-based Java assessment and approval-gated end-to-end migration.
 
 Version `0.3.0` provides `/java-17-to-21`, a workflow that inspects a local Java repository, proposes exact categorized diffs, explains risks and failure consequences, implements any user-approved safety category, requests command permission, validates the result, and produces a final report.
 
@@ -33,7 +33,7 @@ Not supported in this version:
 
 ## Usage
 
-Start Anteroom from the root of the target repository:
+Start AR from the root of the target repository:
 
 ```powershell
 cd C:\path\to\java-repository
@@ -78,7 +78,7 @@ The approval sequence has three distinct decisions:
 
 1. **Selection:** choose which suggestions are in scope. This does not authorize edits.
 2. **Edit approval:** review and approve the exact diff. This authorizes only those file edits.
-3. **Execution permission:** after editing, allow the displayed build, test, application, or analysis command once or for the current Anteroom session. Repository commands can execute plugins, download dependencies, contact services, or have other side effects.
+3. **Execution permission:** after editing, allow the displayed build, test, application, or analysis command once or for the current AR session. Repository commands can execute plugins, download dependencies, contact services, or have other side effects.
 
 `Allow for Session` does not authorize unrelated work: the pack remains limited to the current repository and migration workflow and must explain materially different or expanded commands.
 
